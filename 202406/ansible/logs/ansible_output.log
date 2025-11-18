@@ -1,0 +1,156 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-11-17 23:09:21,869 p=8247 u=sappa n=ansible | [WARNING]: Unable to parse /home/sappa/UTN-FRA_SO_Examenes/202406/ansible/inventory/host as an inventory source
+
+2025-11-17 23:09:21,869 p=8247 u=sappa n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-11-17 23:09:21,875 p=8247 u=sappa n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-11-17 23:09:21,875 p=8247 u=sappa n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: testing
+
+2025-11-17 23:09:22,059 p=8247 u=sappa n=ansible | PLAY [all] ******************************************************************************************************************************************************************************************************
+2025-11-17 23:09:22,059 p=8247 u=sappa n=ansible | skipping: no hosts matched
+2025-11-17 23:09:22,059 p=8247 u=sappa n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************************************
+2025-11-17 23:09:37,542 p=8249 u=sappa n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-17 23:09:37,626 p=8249 u=sappa n=ansible | PLAY [all] ******************************************************************************************************************************************************************************************************
+2025-11-17 23:09:37,637 p=8249 u=sappa n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+2025-11-17 23:09:37,738 p=8249 u=sappa n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nsappa@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2025-11-17 23:09:37,740 p=8249 u=sappa n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************************************
+2025-11-17 23:09:37,740 p=8249 u=sappa n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-11-17 23:15:01,173 p=8308 u=sappa n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-17 23:15:01,264 p=8308 u=sappa n=ansible | PLAY [all] ******************************************************************************************************************************************************************************************************
+2025-11-17 23:15:01,270 p=8308 u=sappa n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+2025-11-17 23:15:02,284 p=8308 u=sappa n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-17 23:15:02,284 p=8308 u=sappa n=ansible | ok: [localhost]
+2025-11-17 23:15:02,289 p=8308 u=sappa n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************************************
+2025-11-17 23:15:02,304 p=8308 u=sappa n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key. while parsing a block mapping
+  in "<unicode string>", line 4, column 1
+did not find expected key
+  in "<unicode string>", line 5, column 3
+
+The error appears to be in '/home/sappa/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 5, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+name: "Crear directorios en /tmp/multi_Pruebas_borrame/"
+  file:
+  ^ here
+
+2025-11-17 23:23:23,985 p=8433 u=sappa n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2025-11-17 23:23:24,079 p=8433 u=sappa n=ansible | PLAY [all] ******************************************************************************************************************************************************************************************************
+2025-11-17 23:23:24,084 p=8433 u=sappa n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+2025-11-17 23:23:24,175 p=8433 u=sappa n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nsappa@127.0.0.1: Permission denied (publickey,password).", "unreachable": true}
+2025-11-17 23:23:24,176 p=8433 u=sappa n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************************************
+2025-11-17 23:23:24,177 p=8433 u=sappa n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-11-17 23:26:37,024 p=8454 u=sappa n=ansible | ERROR! Specified inventory, host pattern and/or --limit leaves us with no hosts to target.
+2025-11-17 23:26:44,041 p=8456 u=sappa n=ansible | PLAY [all] ******************************************************************************************************************************************************************************************************
+2025-11-17 23:26:44,047 p=8456 u=sappa n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+2025-11-17 23:26:44,970 p=8456 u=sappa n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-17 23:26:44,970 p=8456 u=sappa n=ansible | ok: [localhost]
+2025-11-17 23:26:44,975 p=8456 u=sappa n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************************************
+2025-11-17 23:26:44,994 p=8456 u=sappa n=ansible | included: 2do_parcial for localhost
+2025-11-17 23:26:44,998 p=8456 u=sappa n=ansible | TASK [2do_parcial : Crear directorios en /tmp/multi_Pruebas_borrame/] *******************************************************************************************************************************************
+2025-11-17 23:26:45,010 p=8456 u=sappa n=ansible | fatal: [localhost]: FAILED! => {"msg": "The task includes an option with an undefined variable.. 'alumno' is undefined\n\nThe error appears to be in '/home/sappa/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 4, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: \"Crear directorios en /tmp/multi_Pruebas_borrame/\"\n  ^ here\n"}
+2025-11-17 23:26:45,011 p=8456 u=sappa n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************************************
+2025-11-17 23:26:45,011 p=8456 u=sappa n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-11-17 23:39:37,409 p=8632 u=sappa n=ansible | PLAY [produccion] ***********************************************************************************************************************************************************************************************
+2025-11-17 23:39:37,414 p=8632 u=sappa n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+2025-11-17 23:39:38,308 p=8632 u=sappa n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-17 23:39:38,308 p=8632 u=sappa n=ansible | ok: [localhost]
+2025-11-17 23:39:38,313 p=8632 u=sappa n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************************************
+2025-11-17 23:39:38,330 p=8632 u=sappa n=ansible | included: 2do_parcial for localhost
+2025-11-17 23:39:38,335 p=8632 u=sappa n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] *****************************************************************************************************************************************************
+2025-11-17 23:39:38,572 p=8632 u=sappa n=ansible | failed: [localhost] (item=alumno) => {"ansible_loop_var": "item", "changed": false, "item": "alumno", "msg": "There was an issue creating /tmp/2do_parcial/alumno as requested: [Errno 13] Permission denied: b'/tmp/2do_parcial/alumno'", "path": "/tmp/2do_parcial/alumno"}
+2025-11-17 23:39:38,703 p=8632 u=sappa n=ansible | failed: [localhost] (item=equipo) => {"ansible_loop_var": "item", "changed": false, "item": "equipo", "msg": "There was an issue creating /tmp/2do_parcial/equipo as requested: [Errno 13] Permission denied: b'/tmp/2do_parcial/equipo'", "path": "/tmp/2do_parcial/equipo"}
+2025-11-17 23:39:38,709 p=8632 u=sappa n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************************************
+2025-11-17 23:39:38,709 p=8632 u=sappa n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-11-17 23:40:14,641 p=8782 u=root n=ansible | PLAY [produccion] ***********************************************************************************************************************************************************************************************
+2025-11-17 23:40:14,646 p=8782 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+2025-11-17 23:40:15,691 p=8782 u=root n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-17 23:40:15,692 p=8782 u=root n=ansible | ok: [localhost]
+2025-11-17 23:40:15,697 p=8782 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************************************
+2025-11-17 23:40:15,714 p=8782 u=root n=ansible | included: 2do_parcial for localhost
+2025-11-17 23:40:15,718 p=8782 u=root n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] *****************************************************************************************************************************************************
+2025-11-17 23:40:15,951 p=8782 u=root n=ansible | changed: [localhost] => (item=alumno)
+2025-11-17 23:40:16,089 p=8782 u=root n=ansible | changed: [localhost] => (item=equipo)
+2025-11-17 23:40:16,096 p=8782 u=root n=ansible | TASK [2do_parcial : Agrego archivo_datos_alumno desde template] *************************************************************************************************************************************************
+2025-11-17 23:40:16,134 p=8782 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ansible.errors.AnsibleUndefinedVariable: 'Franco' is undefined
+2025-11-17 23:40:16,134 p=8782 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'Franco' is undefined"}
+2025-11-17 23:40:16,136 p=8782 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************************************
+2025-11-17 23:40:16,136 p=8782 u=root n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-11-17 23:43:11,130 p=8986 u=root n=ansible | PLAY [produccion] ***********************************************************************************************************************************************************************************************
+2025-11-17 23:43:11,135 p=8986 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+2025-11-17 23:43:12,168 p=8986 u=root n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-17 23:43:12,169 p=8986 u=root n=ansible | ok: [localhost]
+2025-11-17 23:43:12,175 p=8986 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************************************
+2025-11-17 23:43:12,193 p=8986 u=root n=ansible | included: 2do_parcial for localhost
+2025-11-17 23:43:12,198 p=8986 u=root n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] *****************************************************************************************************************************************************
+2025-11-17 23:43:12,431 p=8986 u=root n=ansible | ok: [localhost] => (item=alumno)
+2025-11-17 23:43:12,566 p=8986 u=root n=ansible | ok: [localhost] => (item=equipo)
+2025-11-17 23:43:12,572 p=8986 u=root n=ansible | TASK [2do_parcial : Agrego archivo_datos_alumno desde template] *************************************************************************************************************************************************
+2025-11-17 23:43:12,980 p=8986 u=root n=ansible | changed: [localhost]
+2025-11-17 23:43:12,986 p=8986 u=root n=ansible | TASK [2do_parcial : Agrego archivo_datos_equipo desde template] *************************************************************************************************************************************************
+2025-11-17 23:43:13,257 p=8986 u=root n=ansible | changed: [localhost]
+2025-11-17 23:43:13,264 p=8986 u=root n=ansible | TASK [2do_parcial : add NOPASSWD in sudores for group {{ 2PSupervisores }}] *************************************************************************************************************************************
+2025-11-17 23:43:13,273 p=8986 u=root n=ansible | fatal: [localhost]: FAILED! => {"msg": "template error while templating string: expected token 'end of print statement', got 'PSupervisores'. String: add NOPASSWD in sudores for group {{ 2PSupervisores }}. expected token 'end of print statement', got 'PSupervisores'"}
+2025-11-17 23:43:13,275 p=8986 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************************************
+2025-11-17 23:43:13,275 p=8986 u=root n=ansible | localhost                  : ok=5    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-11-17 23:46:09,065 p=9231 u=root n=ansible | PLAY [produccion] ***********************************************************************************************************************************************************************************************
+2025-11-17 23:46:09,072 p=9231 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************************************************
+2025-11-17 23:46:10,109 p=9231 u=root n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2025-11-17 23:46:10,110 p=9231 u=root n=ansible | ok: [localhost]
+2025-11-17 23:46:10,116 p=9231 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************************************************************************************************
+2025-11-17 23:46:10,134 p=9231 u=root n=ansible | included: 2do_parcial for localhost
+2025-11-17 23:46:10,139 p=9231 u=root n=ansible | TASK [2do_parcial : Crear directorios en /tmp/2do_parcial/] *****************************************************************************************************************************************************
+2025-11-17 23:46:10,376 p=9231 u=root n=ansible | changed: [localhost] => (item=alumno)
+2025-11-17 23:46:10,513 p=9231 u=root n=ansible | changed: [localhost] => (item=equipo)
+2025-11-17 23:46:10,522 p=9231 u=root n=ansible | TASK [2do_parcial : Agrego archivo_datos_alumno desde template] *************************************************************************************************************************************************
+2025-11-17 23:46:10,896 p=9231 u=root n=ansible | ok: [localhost]
+2025-11-17 23:46:10,901 p=9231 u=root n=ansible | TASK [2do_parcial : Agrego archivo_datos_equipo desde template] *************************************************************************************************************************************************
+2025-11-17 23:46:11,171 p=9231 u=root n=ansible | ok: [localhost]
+2025-11-17 23:46:11,175 p=9231 u=root n=ansible | TASK [2do_parcial : add NOPASSWD in sudores for group 2PSupervisores] *******************************************************************************************************************************************
+2025-11-17 23:46:11,415 p=9231 u=root n=ansible | changed: [localhost]
+2025-11-17 23:46:11,421 p=9231 u=root n=ansible | TASK [2do_parcial : debug] **************************************************************************************************************************************************************************************
+2025-11-17 23:46:11,431 p=9231 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2025-11-17 23:46:11,440 p=9231 u=root n=ansible | TASK [Otra tarea] ***********************************************************************************************************************************************************************************************
+2025-11-17 23:46:11,449 p=9231 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2025-11-17 23:46:11,450 p=9231 u=root n=ansible | PLAY RECAP ******************************************************************************************************************************************************************************************************
+2025-11-17 23:46:11,451 p=9231 u=root n=ansible | localhost                  : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
